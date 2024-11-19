@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class CalculatorApp {
 
-    // Method to compute power of a number
+
     public static double PowerMethod(double baseNum, int exp) {
         double result = 1;
         for (int i = 0; i < exp; i++) {
@@ -11,7 +11,7 @@ public class CalculatorApp {
         return result;
     }
 
-    // Method to calculate sum of elements in an array
+ 
     public static int ComputeSum(int[] values) {
         int total = 0;
         for (int val : values) {
@@ -20,7 +20,7 @@ public class CalculatorApp {
         return total;
     }
 
-    // Method to find maximum value in an array
+
     public static int FindMax(int[] values) {
         if (values.length == 0) return Integer.MIN_VALUE;
         int maximum = values[0];
@@ -32,7 +32,6 @@ public class CalculatorApp {
         return maximum;
     }
 
-    // Method to find minimum value in an array
     public static int FindMin(int[] values) {
         if (values.length == 0) return Integer.MAX_VALUE;
         int minimum = values[0];
@@ -44,7 +43,7 @@ public class CalculatorApp {
         return minimum;
     }
 
-    // Method to calculate average of elements in an array
+  
     public static double ComputeAve(int[] values) {
         if (values.length == 0) return 0;
         int sum = ComputeSum(values);
@@ -115,7 +114,7 @@ public class CalculatorApp {
                     break;
             }
 
-            // Prompt user to compute again or exit
+          
             System.out.print("Would you like to compute again? (yes/no): ");
             String again = scanner.nextLine();
             if (!again.equalsIgnoreCase("yes")) {
